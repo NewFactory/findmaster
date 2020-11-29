@@ -82,8 +82,8 @@ DATABASES = {
         'NAME': 'findmaster',
         'USER': 'project',
         'PASSWORD': '10051qazXSW@',
-        'HOST': 'localhost',
-        'PORT': '',
+        'HOST': '62.151.177.174',
+        'PORT': '5432',
     }
 }
 
