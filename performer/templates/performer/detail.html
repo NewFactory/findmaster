@@ -1,0 +1,45 @@
+{% extends 'main/wrapper.html' %}
+{% block title %}{{performer.name}}{% endblock %}
+{% block content %}
+{% if performer.was_published_recently %}
+<b>NEW!!! COMP</b>
+{% endif %}
+
+<h1>{{performer.name}}</h1><br>
+<b><a href="{{ performer.web_site }}" class="button">{{performer.web_site}} </a></b><br>
+{% for groups in performer.group.all %}
+  <a href="{% url 'performer:group' group.name %}" class="button">{{group.name}}</a> {% endfor %}<br>
+{% for specializations in performer.specializations.all %}
+  <a href="{% url 'performer:specialization' specializations.name %}" class="button">{{specializations.name}}</a> {% endfor %}<br>
+<b>Phone:</b> {% for phones in performer.phones.all %}
+  <a href="#" class="button">{{phones.number}}</a> {% endfor %}<br>
+<b>Email:</b> {% for email in performer.email.all %}
+  <a href="#" class="button">{{email.email}}</a> {% endfor %}<br>
+<b>Country:</b>{% for country in performer.country.all %}
+  <a href="{% url 'performer:country' country.name %}" class="button">{{country.name}}</a> {% endfor %}<br>
+{% for provinces in performer.provinces.all %}
+<a href="{% url 'performer:province' provinces.name %}" class="button">{{provinces.name}}</a> {% endfor %}<br>
+{% for cities in performer.cities.all %}
+  <a href="{% url 'performer:city' cities.name %}" class="button">{{cities.name}}</a> {% endfor %}<br>
+<p><b>{{performer.option}}</b></p><br>
+<p><b>{{performer.description}}</b></p><br>
+<br>
+<br>
+{% if latest_list_review %}
+{% for a in latest_list_review %}
+<strong>{{a.autor}}</strong>
+<p>{{a.reviews}}</p>
+{% endfor %}
+{% else %}
+No review. Need review!
+{% endif %}
+
+<form action="{% url 'performer:leave_review' performer.name %}" method="POST" class="form">
+  {% csrf_token %}
+  <input type="text" required placeholder="Name" name="name"><br>
+  <input type="email" required placeholder="Email" name="email"><br>
+  <input type="rating" required placeholder="Rating" name="rating"><br>
+  <textarea name="text" required placeholder="Your review" cols="30" rows="10"></textarea><br>
+  <button type="submit" class="button">Save</button>
+</form>
+{% endblock %}
