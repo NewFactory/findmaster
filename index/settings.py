@@ -26,7 +26,7 @@ SECRET_KEY = '*_wa9!n96=%podqy@(cp&#mh1bc21(m(68amhj!m59ia+r2h_r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.findmaster.ca', '66.175.232.99', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', '.findmaster.ca', '66.175.232.99', 'localhost']
 
 
 # Application definition
