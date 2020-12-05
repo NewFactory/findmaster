@@ -1,17 +1,10 @@
 {% block jumbotron_top %}
-  <div class="header">
-    <div class="header_logo">
+<div class="jumbotron_top">
+    <div class="jumbotron_top_logo">
       <a href="{% url 'main:index' %}"><span>logo</span></a>
     </div>
-    <div class="header_menu_item">
-      <a href="#">About</a>
-      <a href="{% url 'contact:contact' %}">Contact</a>
-      <a href="{% url 'order:order' %}">New Order</a>
+    <div class="jumbotron_top_menu_item">
       <a href="{% url 'performer:all_performers' %}">Catalog</a>
-    </div>
-    <div class="header_menu_user">
-      <a href="#" class="header_menu_user_button">Your Order</a>
-      <a href="{% url 'contact:contact' %}" class="button">Your Profile</a>
     </div>
   </div>
 {% endblock %}

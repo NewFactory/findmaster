@@ -24,11 +24,10 @@
 <body>
   <header>
     {% include "main/includes/header.html" %}
-    {% include "main/includes/jumbotron_top.html" %}
   </header>
 
   <content>
-    <!-- {% include "main/includes/jumbotron_top.html" %} -->
+    {% include "main/includes/jumbotron_top.html" %}
     {% block content %}{% endblock %}
     {% include "performer/includes/catalog.html" %}
     {% include "main/includes/jumbotron_center.html" %}
