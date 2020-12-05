@@ -19,19 +19,19 @@ h1, h2, h3 {
   text-align: center;
 }
 
-.header a {
+/* .header a {
   color: #fff
-}
+} */
 
 .header {
   height: 80px;
   width: 100%;
-  background-image: url(https://cs5.pikabu.ru/images/previews_comm/2015-02_6/14251235534107.jpg);
+  /* background-image: url(https://cs5.pikabu.ru/images/previews_comm/2015-02_6/14251235534107.jpg);
   background-blend-mode: multiply;
   background-size: auto;
   position: relative;
   color: #fff;
-  background-color: blue;
+  background-color: blue; */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
   display: grid;
   grid-gap: 10px;
@@ -68,13 +68,13 @@ a.button:hover {}
 a.button:active {}
 
 .jumbotron_top, .jumbotron_center, .jumbotron_bottom {
-  background-image: url(https://cs5.pikabu.ru/images/previews_comm/2015-02_6/14251235534107.jpg);
-  background-blend-mode: multiply;
-  background-size: auto;
-  position: relative;
-  color: #fff;
+  /* background-image: url(https://cs5.pikabu.ru/images/previews_comm/2015-02_6/14251235534107.jpg); */
+  /* background-blend-mode: multiply; */
+  /* background-size: auto; */
+  /* position: relative; */
+  /* color: #fff; */
   text-align: center;
-  background-color: green;
+  /* background-color: grey; */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
 }
 

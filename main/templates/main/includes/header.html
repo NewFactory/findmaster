@@ -1,16 +1,10 @@
 {% block header %}
   <div class="header">
-    <div class="header_logo">
-      <a href="{% url 'main:index' %}"><span>logo</span></a>
-    </div>
-    <div class="header_menu_item">
-      <a href="#">About</a>
-      <a href="{% url 'contact:contact' %}">Contact</a>
-      <a href="{% url 'order:order' %}">New Order</a>
-      <a href="{% url 'performer:all_performers' %}">Catalog</a>
+    <div class="city">
+      <a href="{% url 'main:index' %}"><img src="static/main/images/location.png" alt="location"></a>
+      <a href="{% url 'main:index' %}"><span>Graet Vancouver</span></a>
     </div>
     <div class="header_menu_user">
-      <a href="#" class="header_menu_user_button">Your Order</a>
       <a href="{% url 'contact:contact' %}" class="button">Your Profile</a>
     </div>
   </div>
