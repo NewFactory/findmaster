@@ -23,20 +23,26 @@ h1, h2, h3 {
   color: #fff
 } */
 
+
+
 .header {
-  height: 80px;
+  height: 40px;
   width: 100%;
-  /* background-image: url(https://cs5.pikabu.ru/images/previews_comm/2015-02_6/14251235534107.jpg);
-  background-blend-mode: multiply;
-  background-size: auto;
-  position: relative;
-  color: #fff;
-  background-color: blue; */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 2fr 6fr 2fr;
+  grid-template-columns: 2fr 2fr;
   align-items: center;
+}
+
+.jumbotron_top {
+  height: 80px;
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .05), inset 0 -1px 0 rgba(0, 0, 0, .1);
 }
 
 .header_logo {}
@@ -67,7 +73,7 @@ a.button:hover {}
 
 a.button:active {}
 
-.jumbotron_top, .jumbotron_center, .jumbotron_bottom {
+.jumbotron_center, .jumbotron_bottom {
   /* background-image: url(https://cs5.pikabu.ru/images/previews_comm/2015-02_6/14251235534107.jpg); */
   /* background-blend-mode: multiply; */
   /* background-size: auto; */
